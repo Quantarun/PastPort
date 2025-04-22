@@ -165,6 +165,6 @@ async def upload_document(file: UploadFile = File(...)):
 async def health_check():
     return {"status": "ok", "service": "Henry George AI Chatbot"}
 
-# At the bottom of your app.py file, change this:
 if __name__ == '__main__':
-    uvicorn.run("app:app", host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), reload=True)
+    port = int(os.environ.get("PORT", 10000))
+    uvicorn.run("app:app", host="0.0.0.0", port=port, reload=True)
