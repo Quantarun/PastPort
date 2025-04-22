@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry George Chatbot - Historical Wisdom for Modern Times</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- AOS (Animate On Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Henry George</h1>
+                <p class="tagline">Historical Wisdom</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#chat" class="cta-button">Start Chatting</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon dark-icon"></i>
+                <i class="fas fa-sun light-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content - Landing Page -->
+    <main id="landing-page">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h2>Converse with the Spirit of Henry George</h2>
+                    <p>Explore economic philosophy and social reform through an AI-powered conversation with the influential 19th-century economist and social theorist.</p>
+                    <a href="#chat" class="cta-button primary pulse-button">Begin Your Dialogue</a>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="illustration-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Henry_George_c1885_retouched.jpg" alt="Portrait of Henry George" id="henry-george-portrait" class="portrait-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 data-aos="fade-up">About This Chatbot</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                        <p>This AI-powered chatbot embodies the economic philosophy and social reform ideas of Henry George (1839-1897), the American political economist famous for his advocacy of land value taxation and the single tax movement.</p>
+                        <p>Through advanced natural language processing and a comprehensive knowledge base of George's writings, speeches, and economic theories, this chatbot offers an interactive way to explore his influential ideas on wealth inequality, land ownership, and economic justice.</p>
+                    </div>
+                    <div class="quote-container" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        <blockquote>
+                            "Social reform is not to be secured by noise and shouting; by complaints and denunciation; by the formation of parties, or the making of revolutions; but by the awakening of thought and the progress of ideas."
+                            <cite>— Henry George</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Intelligent Conversation Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain icon-gradient"></i>
+                        </div>
+                        <h3>RAG Technology</h3>
+                        <p>Powered by Retrieval-Augmented Generation to provide accurate, contextual responses based on Henry George's actual writings and ideas.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-quote-left icon-gradient"></i>
+                        </div>
+                        <h3>Source Citations</h3>
+                        <p>Every response includes citations to original texts, allowing you to explore George's works in greater depth.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments icon-gradient"></i>
+                        </div>
+                        <h3>Follow-up Questions</h3>
+                        <p>The chatbot suggests relevant follow-up questions to guide your exploration of George's economic philosophy.</p>
+                    </div>
+                    <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-upload icon-gradient"></i>
+                        </div>
+                        <h3>Document Upload</h3>
+                        <p>Upload your own documents about economic theory to discuss them through the lens of Henry George's philosophy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" class="upload-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Enhance the Conversation</h2>
+                <p class="section-intro" data-aos="fade-up" data-aos-delay="100">Upload your own economic texts or research papers to discuss with Henry George's AI.</p>
+                
+                <div class="upload-container">
+                    <div class="upload-instructions" data-aos="fade-right" data-aos-duration="800">
+                        <h3><i class="fas fa-info-circle icon-accent"></i> How It Works</h3>
+                        <ol class="numbered-list">
+                            <li><i class="fas fa-file-upload icon-small"></i> Upload PDF, DOCX, or TXT files containing economic theories or questions</li>
+                            <li><i class="fas fa-cogs icon-small"></i> Our system will process and index your documents</li>
+                            <li><i class="fas fa-robot icon-small"></i> The Henry George AI will incorporate your documents into the conversation</li>
+                            <li><i class="fas fa-lightbulb icon-small"></i> Receive insights on how your documents relate to George's economic philosophy</li>
+                        </ol>
+                    </div>
+                    <div class="upload-interface" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        <form id="document-upload-form" class="upload-form">
+                            <div class="file-drop-area">
+                                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                <span class="file-message">Drag & drop files here or click to browse</span>
+                                <input type="file" class="file-input" id="document-upload" multiple accept=".pdf,.docx,.txt">
+                            </div>
+                            <div id="upload-preview" class="upload-preview">
+                                <!-- Uploaded files will appear here -->
+                            </div>
+                            <button type="submit" class="cta-button secondary">
+                                <i class="fas fa-paper-plane"></i> Process Documents
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="cta-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Ready to Explore Henry George's Ideas?</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Begin your intellectual journey through the economic philosophy that influenced generations.</p>
+                <a href="#chat" class="cta-button primary large glow-button" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-comments"></i> Start Your Conversation
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat Interface -->
+    <section id="chat" class="chat-interface hidden">
+        <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <button id="back-to-landing" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <div class="chat-title">
+                    <h2>Henry George AI</h2>
+                    <p class="chat-subtitle">Discussing economic philosophy since 1879</p>
+                </div>
+                <div class="chat-controls">
+                    <button id="chat-theme-toggle" aria-label="Toggle chat theme">
+                        <i class="fas fa-adjust"></i>
+                    </button>
+                    <button id="clear-chat" aria-label="Clear chat history">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Main Area -->
+            <div class="chat-main">
+                <!-- Document Selection Sidebar -->
+                <div class="document-sidebar">
+                    <h3>Reference Documents</h3>
+                    <div class="document-filter">
+                        <input type="text" id="document-search" placeholder="Search documents...">
+                    </div>
+                    <ul id="document-list" class="document-list">
+                        <li class="document-item active" data-doc-id="progress-poverty">
+                            <span class="doc-title">Progress and Poverty (1879)</span>
+                        </li>
+                        <li class="document-item" data-doc-id="social-problems">
+                            <span class="doc-title">Social Problems (1883)</span>
+                        </li>
+                        <li class="document-item" data-doc-id="protection-free-trade">
+                            <span class="doc-title">Protection or Free Trade (1886)</span>
+                        </li>
+                        <li class="document-item" data-doc-id="condition-labor">
+                            <span class="doc-title">The Condition of Labor (1891)</span>
+                        </li>
+                        <!-- User uploaded documents will appear here -->
+                    </ul>
+                    <div class="document-upload-mini">
+                        <button id="upload-mini-button" class="upload-mini-button">
+                            <i class="fas fa-plus"></i> Add Document
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chat Messages Area -->
+                <div class="chat-messages-container">
+                    <div id="chat-messages" class="chat-messages">
+                        <!-- Welcome message -->
+                        <div class="message system-message">
+                            <p>Welcome to a conversation with Henry George AI. Ask me about economic philosophy, land value taxation, or any of my writings.</p>
+                        </div>
+                        
+                        <!-- Sample AI message with citations -->
+                        <div class="message ai-message">
+                            <div class="message-content">
+                                <p>The central idea in my work is that poverty arises not from a lack of production, but from unjust distribution of wealth, particularly due to private ownership of land and natural resources.</p>
+                            </div>
+                            <div class="message-citations">
+                                <h4>Citations:</h4>
+                                <ul>
+                                    <li><span class="citation-source">Progress and Poverty (1879)</span> - Chapter 1, Page 10</li>
+                                </ul>
+                                <button class="expand-citation">View Excerpt</button>
+                                <div class="citation-excerpt hidden">
+                                    <blockquote>
+                                        "The present century has been marked by a prodigious increase in wealth-producing power... Yet, with all this increase of productive power... we have increasing poverty... This association of poverty with progress is the great enigma of our times."
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Sample user message -->
+                        <div class="message user-message">
+                            <div class="message-content">
+                                <p>What is your solution to this problem of poverty amid progress?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Follow-up Questions Section -->
+                    <div id="follow-up-container" class="follow-up-container">
+                        <h4>Suggested Questions:</h4>
+                        <div class="follow-up-buttons">
+                            <button class="follow-up-button">What is the single tax?</button>
+                            <button class="follow-up-button">How does land value taxation work?</button>
+                            <button class="follow-up-button">What were your views on free trade?</button>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input Area -->
+                    <div class="chat-input-container">
+                        <form id="chat-form">
+                            <div class="input-wrapper">
+                                <textarea id="chat-input" placeholder="Ask Henry George something..." rows="1"></textarea>
+                                <button type="submit" id="send-button" class="send-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Henry George AI</h3>
+                    <p>Exploring economic philosophy through conversation</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Henry_George" target="_blank">About Henry George</a></li>
+                        <li><a href="https://www.henrygeorge.org/" target="_blank">Henry George Foundation</a></li>
+                        <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-link">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Henry George AI Chatbot. All rights reserved.</p>
+                <p class="disclaimer">This is an educational project and not affiliated with any official Henry George organization.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
