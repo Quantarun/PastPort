@@ -49,13 +49,13 @@ google-api-core==2.24.2
 google-api-python-client==2.166.0
 google-auth==2.38.0
 google-auth-httplib2==0.2.0
-google-genai==1.10.0
+google-genai
 google-generativeai==0.8.4
 googleapis-common-protos==1.69.2
-gotrue==2.12.0
+gotrue
 greenlet==3.2.0
 griffe==1.7.2
-groq==0.22.0
+groq
 grpcio==1.71.0
 grpcio-status==1.71.0
 h11==0.14.0
